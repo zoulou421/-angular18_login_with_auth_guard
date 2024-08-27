@@ -26,6 +26,7 @@ export class LoginComponent {
     debugger;
      if(res.result){
        alert("Login Success");
+       localStorage.setItem("angular18Login",this.loginObj.User);
        this.router.navigateByUrl("dashboard");
      }else{
       alert("Check User Name or Password!");
