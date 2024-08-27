@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -12,5 +13,17 @@ export class LoginComponent {
  loginObj:any={
   "EmailId": "",
   "Password": ""
-}
+ }
+ http=inject(HttpClient);
+ onLogin(){
+  debugger;
+   this.http.post("https://freeapi.miniprojectideas.com/api/User/Login",this.loginObj).subscribe((res:any)=>{
+    debugger;
+     if(res.result){
+       alert("Login Success");
+     }else{
+      alert("Check User Name or Password!");
+     }
+   })
+ }
 }
