@@ -1,16 +1,16 @@
-<div class="parent">
+
     <div class="wrapper">
         <form action="">
     
             <h1>Login</h1>
     
             <div class="input-box">
-                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Username" [(ngModel)]="loginObj.EmailId" name="EmailId">
                 <i class='bx bxs-user'></i>
             </div>
     
             <div class="input-box">
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" [(ngModel)]="loginObj.Password" name="Password">
                 <i class='bx bxs-lock-alt' ></i>
             </div>
     
@@ -29,4 +29,4 @@
         </form>
     
     </div>
-</div>
+

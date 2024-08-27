@@ -7,15 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.parent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('https://i.postimg.cc/FR2vpqbG/black-aesthetic-mountains-4k-9k.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+
 
 .wrapper{
     width: 420px;
